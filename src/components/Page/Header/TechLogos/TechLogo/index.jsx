@@ -37,16 +37,22 @@ import { Grid, Row, Col } from 'react-bootstrap'
 
 
 const TechLogo = (props) => {
-  const imgStyle = {
-    maxHeight: props.maxHeight,
-    margin: 'auto',
-    display: 'block',
-    height: 'auto',
-    maxWidth: '100%',
-  }
+  // const imgStyle = {
+  //   // maxHeight: props.maxHeight,
+  //   maxHeight: 250,
+  //   margin: 'auto',
+  //   display: 'block',
+  //   // height: 'auto',
+  //   maxWidth: '100%',
+  // }
+  const imgStyle = classNames({
+    'img-fluid': true,
+    [styles.imgStyle]: '250px',
+  })
   return (
     <div className={styles.techLogo}>
-      <img style={imgStyle} src={props.url} alt="logo" />
+      {/* <img style={imgStyle} src={props.url} alt="logo" /> */}
+      <img className={imgStyle} src={props.url} alt="logo" />
       <div className={styles.logoText}>{props.name}</div>
     </div>
 

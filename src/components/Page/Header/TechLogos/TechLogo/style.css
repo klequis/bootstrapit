@@ -1,5 +1,7 @@
 /* TechLogo */
-
+.imgStyle {
+  max-height: 210px;
+}
 
 .techLogo {
   margin: 10px;
