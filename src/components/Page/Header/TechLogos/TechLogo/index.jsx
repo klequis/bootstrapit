@@ -3,11 +3,12 @@
 import React from 'react';
 import classNames from 'classnames'
 import styles from './style.css';
-import { Grid, Row, Col } from 'react-bootstrap'
+import {Grid, Row, Col} from 'react-bootstrap'
+import iHTML from '../images/html-5.01.png'
 
 // const TechLogo = (props) => {
 //   const imgStyle = {
-//     // maxHeight: props.maxHeight,
+//      maxHeight: props.maxHeight,
 //     margin: 'auto',
 //     display: 'block',
 //     height: 'auto',
@@ -17,7 +18,7 @@ import { Grid, Row, Col } from 'react-bootstrap'
 //     'd-flex': true,
 //     'flex-row': true,
 //     'justify-content-around': true,
-//     // 'img-fluid': true,
+//      'img-fluid': true,
 //   })
 //   return (
 //     <Grid>
@@ -35,25 +36,58 @@ import { Grid, Row, Col } from 'react-bootstrap'
 // };
 // export default TechLogo;
 
+// const TechLogo = (props) => {
+//    const imgStyle = {
+//       maxHeight: props.maxHeight,
+//      maxHeight: 250,
+//      margin: 'auto',
+//      display: 'block',
+//       height: 'auto',
+//      maxWidth: '100%',
+//    }
+//   const imgStyle = classNames({
+//     'img-fluid': true,
+//     [styles.imgStyle]: '250px',
+//   })
+//   return (
+//     <div className={styles.techLogo}>
+//       {/* <img style={imgStyle} src={props.url} alt="logo" /> */}
+//       <img className={imgStyle} src={props.url} alt="logo" />
+//       <div className={styles.logoText}>{props.name}</div>
+//     </div>
+//
+//   );
+// };
+// export default TechLogo
 
 const TechLogo = (props) => {
   // const imgStyle = {
-  //   // maxHeight: props.maxHeight,
+  //    maxHeight: props.maxHeight,
   //   maxHeight: 250,
   //   margin: 'auto',
   //   display: 'block',
-  //   // height: 'auto',
+  //    height: 'auto',
   //   maxWidth: '100%',
   // }
+  const cardStyle = {
+    width: '7rem',
+    padding: '10px 20px',
+  }
+  const cardTitle = {
+    fontSize: '1.0em',
+    textAlign: 'center',
+    marginTop: '5px',
+  }
   const imgStyle = classNames({
     'img-fluid': true,
-    [styles.imgStyle]: '250px',
+    [styles.imgStyle]: '250px'
   })
   return (
-    <div className={styles.techLogo}>
-      {/* <img style={imgStyle} src={props.url} alt="logo" /> */}
-      <img className={imgStyle} src={props.url} alt="logo" />
-      <div className={styles.logoText}>{props.name}</div>
+    <div className="card" style={cardStyle}>
+      <img className="card-img-top" src={iHTML} alt="Card image cap" />
+      <div className="card-block">
+        <h4 className="card-title" style={cardTitle}>Card title</h4>
+      </div>
     </div>
 
   );
