@@ -13,6 +13,10 @@ const TechLogos = (props) => {
     'flex-row': true,
     'justify-content-around': true,
   })
+  const logoImgStyle = classNames({
+    'img-fluid': true,
+    [styles.logoImgFix]: true,
+  })
 
   const renderLogoRow1 = logoRow1.map((t) => (
     <TechLogo
@@ -38,27 +42,27 @@ const TechLogos = (props) => {
     <div>
       <Row >
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
         <Col md={2}>
-          <img src={logoRow1[0].image} className='img-fluid' />
+          <img src={logoRow1[0].image} className={logoImgStyle} />
           <p>Text</p>
         </Col>
       </Row>
