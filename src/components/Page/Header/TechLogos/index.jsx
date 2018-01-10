@@ -37,8 +37,29 @@ const TechLogos = (props) => {
   return (
     <div>
       <Row >
-        <Col md={12} className={logoRowStyle}>
-          {renderLogoRow1}
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
+        </Col>
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
+        </Col>
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
+        </Col>
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
+        </Col>
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
+        </Col>
+        <Col md={2}>
+          <img src={logoRow1[0].image} className='img-fluid' />
+          <p>Text</p>
         </Col>
       </Row>
       <Row >
