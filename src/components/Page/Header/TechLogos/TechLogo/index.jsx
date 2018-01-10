@@ -16,7 +16,8 @@ const TechLogo = (props) => {
     <Grid>
       <Row>
         <Col md={12}>
-          <img style={imgStyle} src={props.url} alt="logo" />
+          {/* <img style={imgStyle} src={props.url} alt="logo" /> */}
+          <img className='img-fluid' src={props.url} alt="logo" />
           <div className={styles.logoText}>{props.name}</div>
         </Col>
       </Row>
