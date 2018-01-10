@@ -1,0 +1,43 @@
+/*Event*/
+
+.eventsPanel {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+.nameCol {
+  /*text-align: center;*/
+  font-size: 1.4em;
+  font-weight: bold;
+}
+.odd {
+  background-color: rgba(180,180,180,0.1);
+}
+.dateCol {
+  font-size: 1.1em;
+  padding: 5px 0;
+}
+@media (max-width: 767px) {
+  .nameCol {
+    text-align: center;
+  }
+  .addressCol {
+    text-align: center;
+  }
+  .dateCol {
+    text-align: center;
+  }
+}
+.addressCol {
+  padding: 5px 0;
+}
+.locationName {
+  /*font-size: 1.1em;*/
+  font-style: italic;
+}
+.locationAddress {
+  font-size: 0.9em;
+}

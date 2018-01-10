@@ -1,0 +1,21 @@
+/* Sponsor */
+.panelSponsor {
+  /*border: none;*/
+  align-items: center;
+  display: flex;
+  flex-flow: column nowrap;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  max-width: 200px;
+  text-align: center;
+}
+
+.sponsorImgContainer {
+  margin-bottom: 10px;
+}
+.sponsorRole {
+  margin-bottom: 0;
+}
+.sponsorName {
+  margin-bottom: 10px;
+}
