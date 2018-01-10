@@ -5,7 +5,8 @@ import iJS from './images/javascript.svg'
 import iReact from './images/react.svg'
 import iNode from './images/nodejs.on-black.01.svg'
 import iMongo from './images/mongo.01.svg'
-import iExpress from './images/express.01.svg'
+// import iExpress from './images/express.01.svg'
+import iExpress from './images/express.black.01.svg'
 
 export const logoRow1 = [
   {
