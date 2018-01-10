@@ -6,7 +6,7 @@ import { Grid, Row, Col } from 'react-bootstrap'
 
 const TechLogo = (props) => {
   const imgStyle = {
-    maxHeight: props.maxHeight,
+    // maxHeight: props.maxHeight,
     margin: 'auto',
     display: 'block',
     height: 'auto',
@@ -21,7 +21,7 @@ const TechLogo = (props) => {
         </Col>
       </Row>
     </Grid>
-    
+
 
   );
 };
