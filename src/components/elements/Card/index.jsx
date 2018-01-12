@@ -21,12 +21,16 @@ const TechLogo = ({ url, name }) => {
     'card-title': true,
     [styles.cardTitleModified]: true,
   })
+  // If props.name is not passed in then don't render the name text
+  const renderName = name
+    ? (<div className={cardBodyStyle}>
+      <h5 className={cardTitle}>{name}</h5>
+    </div>)
+    : null
   return (
     <div className={cardStyle}>
       <img className={imgStyle} src={url} alt="Card cap" />
-      <div className={cardBodyStyle}>
-        <h5 className={cardTitle}>{name}</h5>
-      </div>
+      {renderName}
     </div>
   );
 };
