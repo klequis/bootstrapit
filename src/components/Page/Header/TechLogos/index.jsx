@@ -12,8 +12,24 @@ const TechLogos = (props) => {
     'justify-content-around': true
   })
 
-  const renderLogoRow1 = logoRow1.map((t) => (<Card key={t.name} name={t.name} url={t.image} style={t.style} maxWidth={t.maxWidth} maxHeight={t.maxHeight}/>))
-  const renderLogoRow2 = logoRow2.map((t) => (<Card key={t.name} url={t.image} style={t.style} maxWidth={t.maxWidth} maxHeight={t.maxHeight}/>))
+  const renderLogoRow1 = logoRow1.map((t) => (
+    <Card 
+      key={t.name}
+      name={t.name}
+      url={t.image}
+      style={t.style}
+      maxWidth={t.maxWidth}
+      maxHeight={t.maxHeight}/>
+  ))
+  const renderLogoRow2 = logoRow2.map((t) => (
+    <Card
+      key={t.name}
+      url={t.image}
+      style={t.style}
+      maxWidth={t.maxWidth}
+      maxHeight={t.maxHeight}
+    />
+  ))
 
   return (<div>
     <div className={logoRowStyle}>
