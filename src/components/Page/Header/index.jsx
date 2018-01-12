@@ -53,12 +53,7 @@ const Header = () => {
             <P justify="justify">We run periodic classes for those serious about learning to make software. Our courses cover HTML, CSS, JavaScript, React, Express, Node and MongoDB.</P>
           </Col>
         </Row>
-        {/* <Row> */}
         <TechLogos/>
-        {/* </Row> */}
-
-
-
       </Section>
     </SectionWrapper>
     <SectionWrapper grayBackground="grayBackground">
