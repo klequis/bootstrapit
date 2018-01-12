@@ -51,7 +51,7 @@ export const logoRow2 = [
   {
     name: 'Express',
     image: iExpress,
-    style: 'expressImage',
+    style: 'wideImage',
     maxHeight: 60,
   },
 ]

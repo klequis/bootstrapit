@@ -2,9 +2,10 @@ import React from 'react';
 import classNames from 'classnames'
 import styles from './style.css';
 
-const Card = ({ url, name }) => {
+const Card = ({ url, name, style }) => {
   const imgStyle = classNames({
-    [styles.imgWidth]: true,
+    [styles.smallImg]: style === 'smallImage',
+    [styles.wideImg]: style === 'wideImage',
     'card-img-top': true,
   })
   const cardStyle = classNames({
@@ -27,7 +28,9 @@ const Card = ({ url, name }) => {
     : null
   return (
     <div className={cardStyle}>
-      <img className={imgStyle} src={url} alt="Card cap" />
+      <div>
+        <img className={imgStyle} src={url} alt="Card cap" />
+      </div>
       {renderName}
     </div>
   );
