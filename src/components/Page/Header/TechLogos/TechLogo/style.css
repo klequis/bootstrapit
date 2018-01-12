@@ -12,3 +12,7 @@
   text-align: center;
   font-size: 0.7em;
 }
+
+.setWidth {
+  width: 200px;
+}

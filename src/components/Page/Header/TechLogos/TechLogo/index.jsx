@@ -6,6 +6,39 @@ import styles from './style.css';
 import {Grid, Row, Col} from 'react-bootstrap'
 import iHTML from '../images/html-5.01.png'
 
+const TechLogo = (props) => {
+  const imgStyle = classNames({
+    [styles.setWidth]: true,
+    'card-img-top': true,
+  })
+  const cardStyle = {
+    width: '7rem',
+    padding: '10px 20px',
+  }
+  const cardTitle = {
+    fontSize: '1.0em',
+    textAlign: 'center',
+    marginTop: '5px',
+  }
+  // const imgStyle = classNames({
+  //   'img-fluid': true,
+  //   [styles.imgStyle]: '250px'
+  // })
+  return (
+  // <div className="card" style="width: 18rem;">
+  <div className="card">
+    <img className={imgStyle} src={iHTML} alt="Card cap" />
+    <div className="card-body">
+      <h5 className="card-title">Card title</h5>
+    </div>
+  </div>
+
+
+  );
+};
+export default TechLogo
+
+
 // const TechLogo = (props) => {
 //   const imgStyle = {
 //      maxHeight: props.maxHeight,
@@ -59,39 +92,3 @@ import iHTML from '../images/html-5.01.png'
 //   );
 // };
 // export default TechLogo
-
-const TechLogo = (props) => {
-  // const imgStyle = {
-  //    maxHeight: props.maxHeight,
-  //   maxHeight: 250,
-  //   margin: 'auto',
-  //   display: 'block',
-  //    height: 'auto',
-  //   maxWidth: '100%',
-  // }
-  const cardStyle = {
-    width: '7rem',
-    padding: '10px 20px',
-  }
-  const cardTitle = {
-    fontSize: '1.0em',
-    textAlign: 'center',
-    marginTop: '5px',
-  }
-  const imgStyle = classNames({
-    'img-fluid': true,
-    [styles.imgStyle]: '250px'
-  })
-  return (
-  // <div className="card" style="width: 18rem;">
-  <div className="card">
-    <img className="card-img-top" src={iHTML} alt="Card cap" />
-    <div className="card-body">
-      <h5 className="card-title">Card title</h5>
-    </div>
-  </div>
-
-
-  );
-};
-export default TechLogo
