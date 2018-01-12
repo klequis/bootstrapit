@@ -1,5 +1,5 @@
 // logo-data.js
-import iHTML from './images/html-5.01.png'
+import iHTML from './images/html-5.01.svg'
 import iCSS from './images/css-3.01.svg'
 import iJS from './images/javascript.svg'
 import iReact from './images/react.svg'
