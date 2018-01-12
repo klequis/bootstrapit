@@ -1,10 +1,8 @@
-// TechLogo
-
 import React from 'react';
 import classNames from 'classnames'
 import styles from './style.css';
 
-const TechLogo = ({ url, name }) => {
+const Card = ({ url, name }) => {
   const imgStyle = classNames({
     [styles.imgWidth]: true,
     'card-img-top': true,
@@ -34,4 +32,4 @@ const TechLogo = ({ url, name }) => {
     </div>
   );
 };
-export default TechLogo
+export default Card
