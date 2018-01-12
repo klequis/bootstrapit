@@ -4,7 +4,7 @@ import React from 'react';
 import classNames from 'classnames'
 import styles from './style.css';
 import {Grid, Row, Col} from 'react-bootstrap'
-import iHTML from '../images/html-5.01.png'
+import iHTML from '../images/html-5.01.svg'
 
 const TechLogo = (props) => {
   const imgStyle = classNames({
