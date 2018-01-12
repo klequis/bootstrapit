@@ -13,6 +13,14 @@
   font-size: 0.7em;
 }
 
-.setWidth {
-  width: 200px;
+.imgWidth {
+  width: 75px;
+  margin: 0 auto;
+}
+.cardModified {
+  padding: 0;
+  margin: 10px 10px;
+}
+.cardBodyModified {
+  padding: 0;
 }

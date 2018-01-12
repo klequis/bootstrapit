@@ -8,32 +8,31 @@ import iHTML from '../images/html-5.01.png'
 
 const TechLogo = (props) => {
   const imgStyle = classNames({
-    [styles.setWidth]: true,
+    [styles.imgWidth]: true,
     'card-img-top': true,
   })
-  const cardStyle = {
-    width: '7rem',
-    padding: '10px 20px',
-  }
-  const cardTitle = {
-    fontSize: '1.0em',
-    textAlign: 'center',
-    marginTop: '5px',
-  }
+  const cardStyle = classNames({
+    card: true,
+    [styles.cardModified]: true,
+  })
+  const cardBodyStyle = classNames({
+    'card-body': true,
+    [styles.cardBodyModified]: true,
+  })
+  const cardTitle = classNames({
+    'card-title': true,
+  })
   // const imgStyle = classNames({
   //   'img-fluid': true,
   //   [styles.imgStyle]: '250px'
   // })
   return (
-  // <div className="card" style="width: 18rem;">
-  <div className="card">
-    <img className={imgStyle} src={iHTML} alt="Card cap" />
-    <div className="card-body">
-      <h5 className="card-title">Card title</h5>
+    <div className={cardStyle}>
+      <img className={imgStyle} src={iHTML} alt="Card cap" />
+      <div className={cardBodyStyle}>
+        <h5 className={cardTitle}>Card title</h5>
+      </div>
     </div>
-  </div>
-
-
   );
 };
 export default TechLogo
