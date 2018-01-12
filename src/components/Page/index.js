@@ -6,7 +6,6 @@ import Events from './Events'
 import Members from './Members'
 import Sponsors from './Sponsors'
 import Footer from './Footer'
-import styles from './style.css'
 // import * as ku from '../../lib/ke-utils';
 
 const Page = () => {
