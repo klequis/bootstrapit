@@ -24,6 +24,8 @@ export const members = [
     title: 'Michael',
     subTitle: 'Sr Web Developer',
     style: 'memberImg',
+    height: '110px',
+    width: '110px',
   },
   {
     id: 105,
