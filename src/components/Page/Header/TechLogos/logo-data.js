@@ -10,32 +10,32 @@ import iExpress from './images/express.black.01.svg'
 
 export const logoRow1 = [
   {
-    name: 'HTML 5',
-    image: iHTML,
+    title: 'HTML 5',
+    src: iHTML,
     style: "smallImage",
     maxHeight: 50,
   },
   {
-    name: 'CSS 3',
-    image: iCSS,
+    title: 'CSS 3',
+    src: iCSS,
     style: "smallImage",
     maxHeight: 50,
   },
   {
-    name: 'JavaScript',
-    image: iJS,
+    title: 'JavaScript',
+    src: iJS,
     style: "smallImage",
     maxHeight: 50,
   },
   {
-    name: 'React',
-    image: iReact,
+    title: 'React',
+    src: iReact,
     style: "smallImage",
     maxHeight: 50,
   },
   {
-    name: 'Node',
-    image: iNode,
+    title: 'Node',
+    src: iNode,
     style: "smallImage",
     maxHeight: 50,
   },
@@ -43,14 +43,14 @@ export const logoRow1 = [
 
 export const logoRow2 = [
   {
-    name: 'MongoDB',
-    image: iMongo,
+    title: 'MongoDB',
+    src: iMongo,
     style: 'wideImage',
     maxHeight: 60,
   },
   {
-    name: 'Express',
-    image: iExpress,
+    title: 'Express',
+    src: iExpress,
     style: 'wideImage',
     maxHeight: 60,
   },

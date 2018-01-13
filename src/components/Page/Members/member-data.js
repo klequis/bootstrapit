@@ -6,39 +6,39 @@ import pKevin from './images/kevin.jpg';
 export const members = [
   {
     id: '7a8a0c654b89f157524be1b68adf9dbecc4f1db0',
-    picture: '',
-    name: 'Karl',
-    role: 'Organizer Developer Teacher',
+    src: '',
+    title: 'Karl',
+    subTitle: 'Organizer Developer Teacher',
   },
   {
     id: 103,
-    picture: pLaura,
-    name: 'Laura',
-    role: 'Co-organizer Web Developer',
+    src: pLaura,
+    title: 'Laura',
+    subTitle: 'Co-organizer Web Developer',
   },
   {
     id: 104,
-    picture: pMichael,
-    name: 'Michael',
-    role: 'Sr Web Developer'
+    src: pMichael,
+    title: 'Michael',
+    subTitle: 'Sr Web Developer'
   },
   {
     id: 105,
-    picture: pNathan,
-    name: 'En Zyme',
-    role: 'Python & Data Science',
+    src: pNathan,
+    title: 'En Zyme',
+    subTitle: 'Python & Data Science',
   },
   {
     id: 106,
-    picture: pKevin,
-    name: 'Kevin',
-    role: 'Web Developer',
+    src: pKevin,
+    title: 'Kevin',
+    subTitle: 'Web Developer',
   },
   {
     id: '7a8a0c654b89fasdfghbe1b68adf9dbecc4f1db0',
-    picture: '',
-    name: 'Jim',
-    role: 'Web Developer',
+    src: '',
+    title: 'Jim',
+    subTitle: 'Web Developer',
   },
 ]
 
