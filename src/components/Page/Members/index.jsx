@@ -12,9 +12,10 @@ const Members = () => {
       <Card
         key={m.id}
         _id={m.id}
-        picture={m.picture}
-        name={m.name}
-        role={m.role}
+        src={m.src}
+        title={m.title}
+        subTitle={m.subTitle}
+        style={m.style}
         index={m.index}
       />
     ))

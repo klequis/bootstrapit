@@ -1,12 +1,17 @@
 import React from 'react';
-import classNames from 'classnames'
 import styles from './style.css';
+import classNames from 'classnames'
+import Identicon from '../../elements/Identicon'
+
 import { log } from '../../../lib/ke-utils'
 
-const Card = ({ src, title, subTitle, style }) => {
+// _id is optional and thus far only passed by Members
+const Card = ({ src, title, subTitle, style, _id }) => {
+
   const imgStyle = classNames({
     [styles.smallImg]: style === 'smallImage',
     [styles.wideImg]: style === 'wideImage',
+    // [styles.memberImg]: style === 'memberImg',
     'card-img-top': true,
   })
   const cardStyle = classNames({
@@ -24,7 +29,18 @@ const Card = ({ src, title, subTitle, style }) => {
   const cardSubTitle = classNames({
     color: 'orange',
   })
-
+  log('style', style, 'blue')
+  log('imgStyle', imgStyle, 'blue')
+  // Passing an _id but not a src will result in an identicon being produced
+  const getPicture = () => {
+    if (src === '') {
+      return <Identicon
+        hash={_id}
+             />
+    } else {
+      return <img className={imgStyle} src={src} alt="member" />
+    }
+  }
   // If props.name is not passed in then don't render the name text
   let renderTitles
   if (title && subTitle) {
@@ -46,7 +62,7 @@ const Card = ({ src, title, subTitle, style }) => {
   return (
     <div className={cardStyle}>
       <div>
-        <img className={imgStyle} src={src} alt="Card cap" />
+        {getPicture()}
       </div>
       {renderTitles}
     </div>

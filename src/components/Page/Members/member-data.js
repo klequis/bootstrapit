@@ -9,36 +9,42 @@ export const members = [
     src: '',
     title: 'Karl',
     subTitle: 'Organizer Developer Teacher',
+    style: 'memberImg',
   },
   {
     id: 103,
     src: pLaura,
     title: 'Laura',
     subTitle: 'Co-organizer Web Developer',
+    style: 'memberImg',
   },
   {
     id: 104,
     src: pMichael,
     title: 'Michael',
-    subTitle: 'Sr Web Developer'
+    subTitle: 'Sr Web Developer',
+    style: 'memberImg',
   },
   {
     id: 105,
     src: pNathan,
     title: 'En Zyme',
     subTitle: 'Python & Data Science',
+    style: 'memberImg',
   },
   {
     id: 106,
     src: pKevin,
     title: 'Kevin',
     subTitle: 'Web Developer',
+    style: 'memberImg',
   },
   {
     id: '7a8a0c654b89fasdfghbe1b68adf9dbecc4f1db0',
     src: '',
     title: 'Jim',
     subTitle: 'Web Developer',
+    style: 'memberImg',
   },
 ]
 

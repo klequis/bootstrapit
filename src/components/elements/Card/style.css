@@ -7,6 +7,10 @@
   height: 60px;
   margin: auto;
 }
+.memberImg {
+  height: 110px;
+  width: 110px;
+}
 .cardModified {
   padding: 0;
   margin: 10px 10px;
