@@ -6,7 +6,7 @@ import styles from './style.css';
 import SectionWrapper from '../../elements/SectionWrapper'
 import Section from '../../elements/Section'
 import Identicon from '../../elements/Identicon'
-import iLaura from './images/laura.jpeg';
+import iLaura from './images/laura.jpg';
 import iMichael from './images/michael.jpg';
 import iNathan from './images/nathan.jpg';
 import iKevin from './images/kevin.jpg';
