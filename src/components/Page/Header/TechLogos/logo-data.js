@@ -13,31 +13,31 @@ export const logoRow1 = [
     title: 'HTML 5',
     src: iHTML,
     style: "smallImage",
-    maxHeight: 50,
+    // maxHeight: 50,
   },
   {
     title: 'CSS 3',
     src: iCSS,
     style: "smallImage",
-    maxHeight: 50,
+    // maxHeight: 50,
   },
   {
     title: 'JavaScript',
     src: iJS,
     style: "smallImage",
-    maxHeight: 50,
+    // maxHeight: 50,
   },
   {
     title: 'React',
     src: iReact,
     style: "smallImage",
-    maxHeight: 50,
+    // maxHeight: 50,
   },
   {
     title: 'Node',
     src: iNode,
     style: "smallImage",
-    maxHeight: 50,
+    // maxHeight: 50,
   },
 ]
 
@@ -46,12 +46,12 @@ export const logoRow2 = [
     title: 'MongoDB',
     src: iMongo,
     style: 'wideImage',
-    maxHeight: 60,
+    imageHeight: 60,
   },
   {
     title: 'Express',
     src: iExpress,
     style: 'wideImage',
-    maxHeight: 60,
+    imageHeight: 60,
   },
 ]

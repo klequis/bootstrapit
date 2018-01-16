@@ -1,17 +1,9 @@
 /* Card */
-.smallImg {
-  height: 70px;
-  margin: auto;
-}
-.wideImg {
-  height: 60px;
-  margin: auto;
-}
+
 .cardModified {
   padding: 0;
   margin: 10px 10px;
   border: none;
-  /* border: 1px solid green; */
 }
 .cardBodyModified {
   padding: 0;

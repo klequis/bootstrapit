@@ -5,66 +5,69 @@ import Identicon from '../../elements/Identicon'
 
 import { log } from '../../../lib/ke-utils'
 
-// _id is optional and thus far only passed by Members
-const Card = ({ src, title, subTitle, style, _id }) => {
-
-  const imgStyle = classNames({
-    [styles.smallImg]: style === 'smallImage',
-    [styles.wideImg]: style === 'wideImage',
-    // [styles.memberImg]: style === 'memberImg',
-    'card-img-top': true,
-  })
-  const cardStyle = classNames({
+const Card = ({ id, src, title, subTitle, styleName, cardSize = {}, imageSize = {} }) => {
+  // card
+  const cardClass = classNames({
     card: true,
     [styles.cardModified]: true,
   })
-  const cardBodyStyle = classNames({
+  const cardStyle = {
+    width: cardSize.width || '',
+    height: cardSize.height || '',
+  }
+  // img
+  const imgClass = classNames({
+    [styles.smallImg]: styleName === 'smallImage',
+    [styles.wideImg]: styleName === 'wideImage',
+    'card-img-top': true,
+  })
+  const imgStyle = {
+    width: imageSize.width || '',
+    height: imageSize.height || '',
+  }
+  // body
+  const cardBodyClass = classNames({
     'card-body': true,
     [styles.cardBodyModified]: true,
   })
-  const cardTitle = classNames({
+  // title
+  const cardTitleClass = classNames({
     'card-title': true,
     [styles.cardTitleModified]: true,
   })
-  const cardSubTitle = classNames({
+  // subTitle
+  const cardSubTitleClass = classNames({
     color: 'orange',
   })
-  log('style', style, 'blue')
-  log('imgStyle', imgStyle, 'blue')
   // Passing an _id but not a src will result in an identicon being produced
   const getPicture = () => {
     if (src === '') {
       return <Identicon
-        hash={_id}
+        hash={id}
              />
     } else {
-      return <img className={imgStyle} src={src} alt="member" />
+      return <img className={imgClass} src={src} style={imgStyle} alt="member" />
     }
   }
-  // If props.name is not passed in then don't render the name text
-  let renderTitles
-  if (title && subTitle) {
-    renderTitles = (<div className={cardBodyStyle}>
-      <h5 className={cardTitle}>{title}</h5>
-      <h6 className={cardSubTitle}>{subTitle}</h6>
-    </div>)
- } else if ( title ) {
-   renderTitles = (<div className={cardBodyStyle}>
-      <h5 className={cardTitle}>{title}</h5>
-    </div>)
-} else {
-  renderTitles = null
-}
-
-  log(`${src}, ${title}, ${title}`)
-  log('typeof', renderTitles, 'blue')
+  const renderTitles = () => {
+    if (title && subTitle) {
+      return (<div className={cardBodyClass}>
+        <h5 className={cardTitleClass}>{title}</h5>
+        <h6 className={cardSubTitleClass}>{subTitle}</h6>
+      </div>)
+    } else if ( title ) {
+      return (<div className={cardBodyClass}>
+        <h5 className={cardTitleClass}>{title}</h5>
+      </div>)
+    } else {
+      return null
+    }
+  }
 
   return (
-    <div className={cardStyle}>
-      <div>
-        {getPicture()}
-      </div>
-      {renderTitles}
+    <div className={cardClass} style={cardStyle}>
+      {getPicture()}
+      {renderTitles()}
     </div>
   );
 };

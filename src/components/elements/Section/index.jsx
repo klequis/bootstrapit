@@ -10,7 +10,6 @@ const Section = (props) => {
     [styles.wrapper]: true,
     // [styles.greenBackground]: props.greenBackground,
   })
-  console.log(wrapperStyles)
   return (
     <div className='container' id={props.id}>
       <div className={styles.titles}>

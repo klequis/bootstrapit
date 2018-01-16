@@ -1,15 +1,16 @@
 // Members
 import React from 'react';
 import classNames from 'classnames'
-// import Member from './Member';
 import styles from './style.css';
+import Member from './Member'
 import SectionWrapper from '../../elements/SectionWrapper'
 import Section from '../../elements/Section'
+import Card from '../../elements/Card'
 import Identicon from '../../elements/Identicon'
-import iLaura from './images/laura.jpg';
-import iMichael from './images/michael.jpg';
-import iNathan from './images/nathan.jpg';
-import iKevin from './images/kevin.jpg';
+import iLaura from './images/img-150px/laura.jpg';
+import iMichael from './images/img-150px/michael.jpg';
+import iNathan from './images/img-150px/nathan.jpg';
+import iKevin from './images/img-150px/kevin.jpg';
 
 const Members = () => {
   const getPicture = (hash) => {
@@ -24,10 +25,6 @@ const Members = () => {
     row: true,
     [styles.centerRow]: true
   })
-  const imgNathanStyle = classNames({
-    'card-img-top': true,
-    [styles.nathanPadding]: true
-  })
   const cardTextStyle = classNames({
     'card-text': true,
     [styles.cardText]: true
@@ -41,8 +38,13 @@ const Members = () => {
     [styles.colMod]: true,
   })
   return (<SectionWrapper id='members'>
-    <Section>
+    <Section title='Mentors'>
       <div className={rowStyle}>
+        <Member
+          src={iLaura}
+          title='Laura'
+          subTitle='Web Developer'
+        />
         <div className={colStyle}>
           <div className={cardStyle}>
             <Identicon hash={'7a8a0c654b89f157524be1b68adf9dbecc4f1db0'} />
@@ -72,7 +74,7 @@ const Members = () => {
         </div>
         <div className={colStyle}>
           <div className={cardStyle}>
-            <img className={imgNathanStyle} src={iNathan} alt="member"/>
+            <img className="card-img-top" src={iNathan} alt="member"/>
             <div className="card-body">
               <h5 className={cardTitleStyle}>En Zyme</h5>
               <p className={cardTextStyle}>Python & Data Science</p>

@@ -2,7 +2,8 @@
 import React from 'react';
 import iZelda from './images/zelda.sponsor.jpeg'
 import iBRIIA from './images/briia-logo.01.png'
-import Sponsor from './Sponsor';
+// import Sponsor from './Sponsor';
+import Card from '../../elements/Card'
 import styles from './style.css';
 import SectionWrapper from '../../elements/SectionWrapper'
 import Section from '../../elements/Section'
@@ -12,27 +13,28 @@ const Sponsors = () => {
     const arrSponsors = [
       {
         id: 100,
-        picture: iZelda,
-        name: 'Zelda Kohn',
-        tagLine: 'For all your real estate needs in the Tri-valley!',
+        src: iZelda,
+        title: 'Zelda Kohn',
+        subTitle: 'For all your real estate needs in the Tri-valley!',
+        width: 150,
       },
       {
         id: 200,
-        picture: iBRIIA,
-        name: 'BRIIA',
-        tagLine: 'Bishop Ranch Intelligence Innovation Accelerator',
+        src: iBRIIA,
+        title: 'BRIIA',
+        subTitle: 'Bishop Ranch Intelligence Innovation Accelerator',
+        height: 200,
         // maxWidth: 10,
       }
     ]
 
     const sponsors = arrSponsors.map((s) => (
-      <Sponsor
+      <Card
         key={s.id}
-        picture={s.picture}
-        name={s.name}
-        tagLine={s.tagLine}
-        width={s.maxWidth}
-        height={s.maxHeight}
+        src={s.src}
+        title={s.title}
+        subTitle={s.subTitle}
+        size={{ width: s.width }}
       />
     ))
     return (

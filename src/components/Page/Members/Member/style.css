@@ -1,25 +1,25 @@
 /* Member */
 
-.memberItem {
-  display: flex;
-  flex-flow: column nowrap;
-  padding: 15px 10px;
-  justify-content: flex-start;
-  max-width: 130px;
+.headShot {
+  height: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  width: 150px !important;
+}
+.centerRow {
+  margin-left: auto;
+  margin-right: auto;
+}
+.cardTitle {
+  font-size: 1.15em;
+  font-weight: bold;
   text-align: center;
 }
-
-.memberImg {
-  max-height: 110px;
+.cardText {
+  font-size: 1.15em;
+  text-align: center;
 }
-
-.memberName {
-  font-weight: bold;
-}
-
-.memberRole {
-  margin-top: 3px;
-}
-.titles {
-  margin-top: 10px;
+.colMod {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
